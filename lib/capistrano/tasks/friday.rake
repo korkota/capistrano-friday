@@ -24,6 +24,7 @@ namespace :friday do
     ignored_stages = Array(fetch :friday_ignored_stages)
     unless ignored_stages.include?(fetch(:stage))
       invoke 'friday:good_luck' if Time.now.friday?
+      # invoke 'friday:happy_birthday' if Time.now.strftime("%m-%d") == VladimirKochnev.created_at.strftime("%m-%d")
     end
   end
 
@@ -37,6 +38,11 @@ namespace :friday do
       fail "Friday deploy disabled!"
     end
   end
+end
+
+task :happy_birthday do
+  # ∩______∩ five
+  # |(• ◡•)|/  \(❍ᴥ❍ʋ)
 end
 
 namespace :load do
