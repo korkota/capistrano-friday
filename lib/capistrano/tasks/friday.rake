@@ -40,10 +40,10 @@ namespace :friday do
   end
 end
 
-task :happy_birthday do
-  # ∩______∩ five
-  # |(• ◡•)|/  \(❍ᴥ❍ʋ)
-end
+# task :happy_birthday do
+#   ∩______∩ five
+#   |(• ◡•)|/  \(❍ᴥ❍ʋ)
+# end
 
 namespace :load do
   task :defaults do
